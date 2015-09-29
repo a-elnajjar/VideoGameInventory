@@ -8,6 +8,11 @@
         walkthroughURL: string;
         description: string;
         imageUrl: string;
+        createdBy: string;
+        createdOn: Date;
+        modifiedBy: string;
+        modifiedOn:Date;
+        
 
         
     }
@@ -20,6 +25,10 @@
             public developer: Date,
             public walkthroughURL: string,
             public description: string,
-            public imageUrl: string){}
+            public imageUrl: string,
+            public createdBy: string,
+            public createdOn: Date,
+            public modifiedBy: string,
+            public modifiedOn: Date) { }
     }
 }
