@@ -4,7 +4,7 @@
         recoredId: number;
         name: string;
         publisher: string;
-        developer: Date;
+        developer: string;
         walkthroughURL: string;
         description: string;
         imageUrl: string;
@@ -22,7 +22,7 @@
         constructor(public  recoredId: number,
             public name: string,
             public publisher: string,
-            public developer: Date,
+            public developer: string,
             public walkthroughURL: string,
             public description: string,
             public imageUrl: string,
