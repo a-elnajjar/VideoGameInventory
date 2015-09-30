@@ -5,15 +5,15 @@
     ]);
 
     main.config(routeConfig);
-    routeConfig.$inject = ["$routeProvider"];
+    routeConfig.$inject = ['$routeProvider'];
     function routeConfig($routeProvider: ng.route.IRouteProvider): void {
 
         $routeProvider
-            .when("/insertGameView",
+            .when('/insertGame',
             {
-                templateUrl: "/app/insertGame/insertGameView.html",
-                controller: "insertGameController as vm"
+                templateUrl: '/app/insertGame/insertGameView.html',
+                controller: 'InsertGameController as vm'
             })
-            .otherwise("/insertGameView");
+            .otherwise('/insertGame');
     }
 }

@@ -9,7 +9,7 @@
     class InsertGameController implements IGameModel {
         title: string;
         game: app.domain.IGame;
-        static $inject = ["dataAccessService"];
+        static $inject = [];
 
         insertGame(): void {
             
@@ -17,7 +17,7 @@
     }
 
     angular
-        .module("app")
-        .controller("InsertGameController",
+        .module('app')
+        .controller('InsertGameController',
         InsertGameController);
 }

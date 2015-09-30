@@ -7,10 +7,10 @@ var app;
             }
             InsertGameController.prototype.insertGame = function () {
             };
-            InsertGameController.$inject = ["dataAccessService"];
+            InsertGameController.$inject = [];
             return InsertGameController;
         })();
-        angular.module("app").controller("InsertGameController", InsertGameController);
+        angular.module('app').controller('InsertGameController', InsertGameController);
     })(insertGame = app.insertGame || (app.insertGame = {}));
 })(app || (app = {}));
 //# sourceMappingURL=insertGameController.js.map

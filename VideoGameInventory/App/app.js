@@ -5,12 +5,12 @@ var app;
         'ngRoute'
     ]);
     main.config(routeConfig);
-    routeConfig.$inject = ["$routeProvider"];
+    routeConfig.$inject = ['$routeProvider'];
     function routeConfig($routeProvider) {
-        $routeProvider.when("/insertGameView", {
-            templateUrl: "/app/insertGame/insertGameView.html",
-            controller: "insertGameController as vm"
-        }).otherwise("/insertGameView");
+        $routeProvider.when('/insertGame', {
+            templateUrl: '/app/insertGame/insertGameView.html',
+            controller: 'InsertGameController as vm'
+        }).otherwise('/insertGame');
     }
 })(app || (app = {}));
 //# sourceMappingURL=app.js.map
