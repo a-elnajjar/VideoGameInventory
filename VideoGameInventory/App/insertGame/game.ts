@@ -16,7 +16,6 @@
         modifiedBy: string;
         modifiedOn: Date;
     }
-
     export class Game implements IGame
     {
         constructor(public recoredId: number,
