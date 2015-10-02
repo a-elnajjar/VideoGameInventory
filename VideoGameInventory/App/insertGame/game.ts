@@ -1,6 +1,9 @@
-﻿module app.domain {
+﻿module app.domain
+{
     'use strict';
-    export interface IGame {
+
+    export interface IGame
+    {
         recoredId: number;
         name: string;
         publisher: string;
@@ -11,15 +14,12 @@
         createdBy: string;
         createdOn: Date;
         modifiedBy: string;
-        modifiedOn:Date;
-        
-
-        
+        modifiedOn: Date;
     }
 
-    export class Game implements IGame {
-
-        constructor(public  recoredId: number,
+    export class Game implements IGame
+    {
+        constructor(public recoredId: number,
             public name: string,
             public publisher: string,
             public developer: string,
@@ -29,6 +29,6 @@
             public createdBy: string,
             public createdOn: Date,
             public modifiedBy: string,
-            public modifiedOn: Date) { }
+            public modifiedOn: Date) {}
     }
 }

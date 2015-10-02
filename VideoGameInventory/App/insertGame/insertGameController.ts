@@ -1,23 +1,26 @@
-﻿module app.insertGame {
-    interface IGameModel {
+﻿module app.insertGame
+{
+    interface IGameModel
+    {
         title: string;
-        game: app.domain.IGame;
-        insertGame(): void;       
+        game: domain.IGame;
+        insertGame(): void;
     }
 
 
-    class InsertGameController implements IGameModel {
+    class InsertGameController implements IGameModel
+    {
         title: string;
-        game: app.domain.IGame;
+        game: domain.IGame;
         static $inject = [];
 
-        insertGame(): void {
-            
+        insertGame(): void
+        {
         }
     }
 
     angular
         .module('app')
         .controller('InsertGameController',
-        InsertGameController);
+            InsertGameController);
 }
